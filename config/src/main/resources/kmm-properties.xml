@@ -1,0 +1,50 @@
+<config>
+
+		<!-- DATABASE SETTINGS -->
+	<!--<param name="datasource.username">kmmdemo</param>-->
+	<!--<param name="datasource.password">kmmdemo</param>-->
+	<!--<param name="datasource.url">jdbc:mysql://localhost:3306/kmmdemo</param>-->
+
+	<!-- These properties were supposedly removed due to a rice enhancement,
+		but it didn't work without them. -->
+	<!--<param name="datasource.pool.maxWait">30000</param>-->
+	<!--<param name="datasource.ojb.platform">MySQL</param>-->
+	<!--<param name="datasource.platform">org.kuali.rice.core.framework.persistence.platform.MySQLDatabasePlatform</param>-->
+	<!--<param name="datasource.driver.name">com.mysql.jdbc.Driver</param>-->
+	<!--<param name="datasource.pool.validationQuery">select 1 from dual</param>-->
+	<!--<param name="datasource.pool.size">50</param>-->
+
+	<!--<param name="rice.datasource.username">kuldev</param>-->
+	<!--<param name="rice.datasource.password">kuldev</param>-->
+	<!--<param name="rice.datasource.url">jdbc:mysql://localhost:3306/kuldev</param>-->
+
+
+	<!--<param name="ksb.datasource.username">kuldev</param>-->
+	<!--<param name="ksb.datasource.password">kuldev</param>-->
+	<!--<param name="ksb.datasource.url">jdbc:mysql://localhost:3306/kuldev</param>-->
+
+
+	<!--KMM Datasource-->
+	<param name="kmm.datasource.url">jdbc:mysql://localhost:3306/kmmdemo</param>
+	<param name="kmm.datasource.username">kmmdemo</param>
+	<param name="kmm.datasource.password">kmmdemo</param>
+	<param name="kmm.datasource.pool.maxActive">50</param>
+	<param name="kmm.datasource.pool.minIdle">5</param>
+	<param name="kmm.datasource.pool.initialSize">1</param>
+	<param name="kmm.datasource.pool.maxSize">2</param>
+	<param name="kmm.datasource.pool.minSize">1</param>
+	<param name="kmm.datasource.pool.maxWait">30000</param>
+	<param name="kmm.datasource.pool.accessToUnderlyingConnectionAllowed">true</param>
+	<param name="kmm.datasource.pool.validationQuery">select 1 from dual</param>
+
+	<!--Rice Datasource-->
+	<param name="rice.datasource.url">jdbc:mysql://localhost:3306/kuldev</param>
+	<param name="rice.datasource.username">kuldev</param>
+	<param name="rice.datasource.password">kuldev</param>
+	<param name="rice.datasource.connection.timeout">100000</param>
+	<param name="rice.datasource.pool.maxSize">2</param>
+	<param name="rice.datasource.pool.minSize">1</param>
+	<param name="rice.datasource.pool.maxWait">30000</param>
+
+
+</config>

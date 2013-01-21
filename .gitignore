@@ -1,0 +1,17 @@
+target/
+overlays/
+=======
+*.class
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+#IDE Files:
+atlassian-ide-plugin.xml
+*~
+
+web/src/main/webapp
+web/src/main/resources
+web/src/main/java
