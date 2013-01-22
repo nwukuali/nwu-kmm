@@ -34,6 +34,9 @@
 				</includes>
 			</resource>
 		</resources>
+		<filters>
+			<filter>${filter.directory}/${build.environment.setting}.properties</filter>
+		</filters>
 	</build>
 
 	<profiles>

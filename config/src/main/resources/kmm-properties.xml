@@ -1,28 +1,15 @@
 <config>
 
-		<!-- DATABASE SETTINGS -->
-	<!--<param name="datasource.username">kmmdemo</param>-->
-	<!--<param name="datasource.password">kmmdemo</param>-->
-	<!--<param name="datasource.url">jdbc:mysql://localhost:3306/kmmdemo</param>-->
-
-	<!-- These properties were supposedly removed due to a rice enhancement,
-		but it didn't work without them. -->
-	<!--<param name="datasource.pool.maxWait">30000</param>-->
-	<!--<param name="datasource.ojb.platform">MySQL</param>-->
-	<!--<param name="datasource.platform">org.kuali.rice.core.framework.persistence.platform.MySQLDatabasePlatform</param>-->
-	<!--<param name="datasource.driver.name">com.mysql.jdbc.Driver</param>-->
-	<!--<param name="datasource.pool.validationQuery">select 1 from dual</param>-->
-	<!--<param name="datasource.pool.size">50</param>-->
-
-	<!--<param name="rice.datasource.username">kuldev</param>-->
-	<!--<param name="rice.datasource.password">kuldev</param>-->
-	<!--<param name="rice.datasource.url">jdbc:mysql://localhost:3306/kuldev</param>-->
-
-
-	<!--<param name="ksb.datasource.username">kuldev</param>-->
-	<!--<param name="ksb.datasource.password">kuldev</param>-->
-	<!--<param name="ksb.datasource.url">jdbc:mysql://localhost:3306/kuldev</param>-->
-
+	<!--URLS-->
+	<param name="kmm.server.domain">${kmm.server.domain.setting}</param>
+	<param name="kmm.server.port">8080</param>
+	<param name="kmm.server.context">/kmm</param>
+	<param name="rice.server.domain">${rice.server.domain.setting}</param>
+	<param name="rice.server.port">8080</param>
+	<param name="rice.server.context">${rice.server.context.setting}</param>
+	<param name="kfs.server.domain">${kfs.server.domain.setting}</param>
+	<param name="kfs.server.port">${kfs.server.port.setting}</param>
+	<param name="kfs.server.context">/kfs</param>
 
 	<!--KMM Datasource-->
 	<param name="kmm.datasource.url">jdbc:mysql://localhost:3306/kmmdemo</param>

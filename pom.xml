@@ -33,36 +33,9 @@
 
 		<!--BUILD TIME FILTER PROPERTIES-->
 		<shop.guest.user>shopguest</shop.guest.user>
-		<build.environment>dev</build.environment>
-		<authentication.filter.definition>
-			<![CDATA[
-        <filter>
-                <filter-name>DummyLoginFilter</filter-name>
-                <filter-class>org.kuali.rice.kew.web.DummyLoginFilter</filter-class>
-                <init-param>
-                        <param-name>loginUser</param-name>
-                        <param-value>khuntley</param-value>
-                </init-param>
-        </filter>
-        ]]>
-		</authentication.filter.definition>
 
-		<authentication.filter.mappings>
-			<![CDATA[
-        <filter-mapping>
-                <filter-name>DummyLoginFilter</filter-name>
-                <servlet-name>action</servlet-name>
-        </filter-mapping>
-        <filter-mapping>
-                <filter-name>DummyLoginFilter</filter-name>
-                <servlet-name>dwr-invoker</servlet-name>
-        </filter-mapping>
-        <filter-mapping>
-                <filter-name>DummyLoginFilter</filter-name>
-                <servlet-name>batchFileUpload</servlet-name>
-        </filter-mapping>
-    ]]>
-		</authentication.filter.mappings>
+		<build.environment.setting>dev</build.environment.setting>
+		<filter.directory>${basedir}/src/main/filters</filter.directory>
 	</properties>
 
 	<dependencyManagement>
@@ -295,19 +268,13 @@
 				<activeByDefault>true</activeByDefault>
 			</activation>
 			<properties>
-				<kuali.home.setting>target/kuali</kuali.home.setting>
-				<server.name.setting>localhost</server.name.setting>
-				<rice.dev.mode.setting>true</rice.dev.mode.setting>
-				<log.dir.setting>${kuali.home.setting}/kmm/logs</log.dir.setting>
+				<build.environment.setting>dev</build.environment.setting>
 			</properties>
 		</profile>
 		<profile>
 			<id>release</id>
 			<properties>
-				<kuali.home.setting>/var/opt/kuali</kuali.home.setting>
-				<server.name.setting>[[local.server.name]]</server.name.setting>
-				<rice.dev.mode.setting>false</rice.dev.mode.setting>
-				<log.dir.setting>[Configure me!!!! eg] {user.home}/kuali/kmm/tst/logs</log.dir.setting>
+				<build.environment.setting>prd</build.environment.setting>
 			</properties>
 		</profile>
 	</profiles>
