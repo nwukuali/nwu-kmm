@@ -20,8 +20,8 @@
 	</prerequisites>
 	<properties>
 		<!--DEPENDENCIES-->
-		<rice.version>2.1.2-NWU-SNAPSHOT</rice.version>
-		<kfs-foundation-core.version>5.0.1-SNAPSHOT</kfs-foundation-core.version>
+		<rice.version>2.1.6-SNAPSHOT</rice.version>
+		<kfs-foundation-core.version>5.0.2-SNAPSHOT</kfs-foundation-core.version>
 		<ojdbc6.version>11.2.0.2</ojdbc6.version>
 		<mysql-connector-java.version>5.1.16</mysql-connector-java.version>
 
@@ -125,11 +125,11 @@
 				<scope>provided</scope>
 				<type>war</type>
 			</dependency>
-			<dependency>
-				<groupId>za.ac.nwu</groupId>
-				<artifactId>kfs-foundation-core</artifactId>
-				<version>${kfs-foundation-core.version}</version>
-			</dependency>
+            <dependency>
+                <groupId>org.kuali.kfs</groupId>
+                <artifactId>kfs-foundation-core</artifactId>
+                <version>${kfs-foundation-core.version}</version>
+            </dependency>
 			<dependency>
 				<groupId>org.apache.lucene</groupId>
 				<artifactId>lucene-core</artifactId>

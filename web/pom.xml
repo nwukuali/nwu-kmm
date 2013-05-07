@@ -29,7 +29,7 @@
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
-			<groupId>za.ac.nwu</groupId>
+			<groupId>org.kuali.kfs</groupId>
 			<artifactId>kfs-foundation-core</artifactId>
 		</dependency>
 		<dependency>
